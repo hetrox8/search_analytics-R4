@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.2.3"
 
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
-gem 'webpacker', '~> 6.0'
+gem 'webpacker', '~> 5.x'  # or '6.x' depending on compatibility
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem "sprockets-rails"
