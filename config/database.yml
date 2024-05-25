@@ -1,0 +1,20 @@
+# config/database.yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: mombasa@2023
+  host: localhost
+
+development:
+  <<: *default
+  database: realtime_search_analytics_development
+
+test:
+  <<: *default
+  database: realtime_search_analytics__test
+
+production:
+  <<: *default
+  database: realtime_search_analytics_production
